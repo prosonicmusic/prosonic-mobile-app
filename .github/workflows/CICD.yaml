@@ -60,3 +60,18 @@ jobs:
             
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
           document: build/app/outputs/apk/release/prosonic.apk
+
+      - name: Send release version on telegram for Hamid
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.HAMID_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ${{ github.actor }} created commit:
+            
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            Repository: ${{ github.repository }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+          document: build/app/outputs/apk/release/prosonic.apk
