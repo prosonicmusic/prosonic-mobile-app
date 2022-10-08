@@ -18,6 +18,8 @@ class AppConstant {
   static const black = Color.fromARGB(255, 13, 13, 13);
   static const white = Color.fromARGB(255, 255, 255, 255);
   static const blue = Color.fromARGB(255, 15, 101, 242);
+  static const red2 = Color(0xffdd1f5f);
+  static const blue2 = Color(0xaa12d8d3);
 
   static const primaryColor = red;
   static const appbarColor = Colors.transparent;

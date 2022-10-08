@@ -37,11 +37,14 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Ionicons.basket_outline,
-              size: 30,
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Ionicons.bag,
+                size: 30,
+              ),
             ),
           ),
         ],
@@ -52,6 +55,7 @@ class _HomePageState extends State<HomePage> {
         animationDuration: const Duration(milliseconds: 200),
         animationCurve: Curves.ease,
         buttonBackgroundColor: AppConstant.red,
+        height: 67,
         index: 0,
         items: const <Widget>[
           Icon(
@@ -63,7 +67,11 @@ class _HomePageState extends State<HomePage> {
             size: 29,
           ),
           Icon(
-            Ionicons.person_circle_outline,
+            Ionicons.albums,
+            size: 29,
+          ),
+          Icon(
+            Ionicons.shield_checkmark,
             size: 29,
           ),
           Icon(
