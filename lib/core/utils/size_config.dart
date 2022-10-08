@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class SizeConfig {
   static late double _screenWidth;
   static late double _screenHeight;
-  static late double _blockWidth = 0;
-  static late double _blockHeight = 0;
+  static double _blockWidth = 0;
+  static double _blockHeight = 0;
 
   static late double textMultiplier;
   static late double imageSizeMultiplier;

@@ -23,10 +23,13 @@ class SplashPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppConstant.gray,
         body: SafeArea(
-          child: Center(
-            child: Image.asset(
-              "assets/images/p.png",
-              width: SizeConfig.widthMultiplier * 50,
+          child: Hero(
+            tag: AppConstant.splashIconHero,
+            child: Center(
+              child: Image.asset(
+                "assets/images/p.png",
+                width: SizeConfig.widthMultiplier * 50,
+              ),
             ),
           ),
         ),

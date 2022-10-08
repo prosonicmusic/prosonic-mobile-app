@@ -29,6 +29,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.1"
+  circular_bottom_navigation:
+    dependency: "direct main"
+    description:
+      name: circular_bottom_navigation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.0"
   clock:
     dependency: transitive
     description:
@@ -50,6 +57,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  curved_navigation_bar:
+    dependency: "direct main"
+    description:
+      name: curved_navigation_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   dio:
     dependency: "direct main"
     description:
@@ -116,6 +130,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.1"
+  ionicons:
+    dependency: "direct main"
+    description:
+      name: ionicons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.1"
   lints:
     dependency: transitive
     description:

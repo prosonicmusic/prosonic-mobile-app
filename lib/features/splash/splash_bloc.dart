@@ -8,7 +8,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
   SplashBloc() : super(SplashInitial()) {
     on<SplashEvent>((event, emit) {});
     on<AppStarted>((event, emit) async {
-      await Future.delayed(Duration(seconds: 2));
+      await Future.delayed(const Duration(seconds: 2));
       emit(NavigateToHome());
     });
   }

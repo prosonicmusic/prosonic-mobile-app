@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppConstant {
+  /// hero tags
+  static const splashIconHero = "splash";
+
   /// strings
   static const appName = "Prosonic";
   static const placeHolder =
@@ -10,7 +13,7 @@ class AppConstant {
       specimen book.""";
 
   /// colors
-  static const red = Color.fromARGB(255, 241, 0, 53);
+  static const red = Color.fromARGB(255, 229, 0, 33);
   static const gray = Color.fromARGB(255, 24, 24, 24);
   static const black = Color.fromARGB(255, 13, 13, 13);
   static const white = Color.fromARGB(255, 255, 255, 255);
