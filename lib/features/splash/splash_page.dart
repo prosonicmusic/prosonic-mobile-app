@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:prosonic/core/constant/constant.dart';
 import 'package:prosonic/core/utils/size_config.dart';
+import 'package:prosonic/features/base/base_page.dart';
 import 'package:prosonic/features/splash/splash_bloc.dart';
-
-import '../home/home_page.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -17,7 +16,7 @@ class SplashPage extends StatelessWidget {
       bloc: BlocProvider.of<SplashBloc>(context)..add(AppStarted()),
       listener: (context, state) {
         if (state is NavigateToHome) {
-          Navigator.pushReplacementNamed(context, HomePage.path);
+          Navigator.pushReplacementNamed(context, BasePage.path);
         }
       },
       child: Scaffold(
