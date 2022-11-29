@@ -3,6 +3,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:prosonic/core/constant/constant.dart';
 import 'package:prosonic/core/utils/size_config.dart';
 import 'package:prosonic/core/widgets/helper_widgets.dart';
+import 'package:prosonic/features/authentication/login_page.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -37,7 +38,9 @@ class AuthenticationSection extends StatelessWidget {
           icon: Icons.key,
           iconColor: Colors.amber,
           title: "Login | Register",
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, LoginPage.path);
+          },
         ),
         item(
           context,
