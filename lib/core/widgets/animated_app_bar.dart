@@ -30,14 +30,14 @@ class _AnimatedAppBarState extends State<AnimatedAppBar>
   void initState() {
     super.initState();
 
-    _animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 1));
+    _animationController = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 400));
 
     _fadeAnimation =
         Tween<double>(begin: 0, end: 1).animate(_animationController);
     _slideAnimation = Tween<Offset>(
-      begin: Offset(0, 1),
-      end: Offset(0, 0),
+      begin: const Offset(0, 1),
+      end: const Offset(0, 0),
     ).animate(_animationController);
   }
 
